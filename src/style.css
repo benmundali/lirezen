@@ -1,0 +1,86 @@
+:root {
+  font-family: system-ui, sans-serif;
+  color: #1c3045;
+  background: #f4f7fb;
+}
+body {
+  margin: 0;
+}
+.wrap {
+  max-width: 760px;
+  margin: auto;
+  padding: 28px;
+}
+header {
+  margin-bottom: 24px;
+}
+.panel,
+.book {
+  background: white;
+  padding: 18px;
+  border: 1px solid #dce5ee;
+  border-radius: 12px;
+  margin-bottom: 15px;
+}
+label {
+  display: block;
+  margin: 12px 0;
+}
+input {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px;
+  border: 1px solid #aab8c9;
+  border-radius: 6px;
+  margin-top: 5px;
+}
+button,
+select {
+  padding: 9px 12px;
+  border: 1px solid #bbc9d9;
+  border-radius: 7px;
+  cursor: pointer;
+  background: #eaf0ff;
+}
+button[type="submit"] {
+  background: #174ca6;
+  color: white;
+  border: 0;
+}
+button:disabled {
+  opacity: 0.6;
+}
+.link {
+  background: transparent;
+  border: 0;
+  color: #174ca6;
+  margin-top: 8px;
+}
+.toolbar,
+.book {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  justify-content: space-between;
+}
+.book div {
+  flex: 1;
+  min-width: 0;
+}
+.book p {
+  margin: 4px 0;
+  color: #667386;
+}
+.message {
+  padding: 12px;
+  background: #e5f6ef;
+  border-radius: 8px;
+}
+@media (max-width: 540px) {
+  .toolbar,
+  .book {
+    align-items: stretch;
+    flex-direction: column;
+  }
+}
